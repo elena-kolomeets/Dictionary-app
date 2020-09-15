@@ -1,10 +1,3 @@
-"""This app is an English dictionary
-with tkinter GUI based on json data file
-It searches for the word given by the user
-and suggests 3 similar words if it's not found
-Search is available with the GUI button or keyboard 'Enter' button
-"""
-
 import json
 import difflib
 import tkinter as tk
@@ -95,13 +88,7 @@ e1.configure(font=('Times New Roman', 12))
 e1.bind('<Button-1>', del_entry)
 e1.grid(row=1, column=1, pady=5)
 
-t1 = tk.Text(window, height=7, width=50, font=('Times New Roman', 12))
-t1.grid(row=3, column=1, pady=5, padx=(5, 0))
-
-s1 = tk.Scrollbar(window)
-s1.grid(row=3, column=2, pady=5, padx=(0, 5), ipady=44, sticky=tk.W)
-
-t1.configure(yscrollcommand=s1.set)
-s1.configure(command=t1.yview)
+t1 = tk.Text(window, height=7, width=60, font=('Times New Roman', 12))
+t1.grid(row=3, column=1, pady=5, padx=5)
 
 window.mainloop()
