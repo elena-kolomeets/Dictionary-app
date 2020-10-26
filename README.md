@@ -8,4 +8,4 @@ and suggests **3** similar words if it's not found
 
 Search is available with the GUI button or keyboard 'Enter' button
 
-<img src="dictionary.gif" height="320"/>
+<img src="dictionary.gif" width="500"/>
